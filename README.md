@@ -123,3 +123,15 @@ worker/                Cloudflare Worker giriş noktası
 ## Yayınlama
 
 Proje `.openai/hosting.json` kimliğiyle Sites yaşam döngüsüne bağlıdır. Production build, Cloudflare uyumlu Worker çıktısı ve statik varlıkları `dist/` altında üretir.
+
+### Netlify ile dağıtım
+
+Frontend, Netlify'de barındırılabilir:
+
+1. GitHub repo'nu oluşturun ve kodun push edin
+2. [Netlify](https://netlify.com) hesabınızda GitHub'ı bağlayın
+3. Yeni site oluşturun ve repo'yu seçin
+4. Build komutu: `npm run build`
+5. Yayınla klasörü: `dist/client`
+
+Netlify otomatik olarak her push'ta deploy eder.
