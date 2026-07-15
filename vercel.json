@@ -1,0 +1,4 @@
+{
+  "buildCommand": "bash scripts/build-verified.sh",
+  "outputDirectory": "dist/client"
+}
